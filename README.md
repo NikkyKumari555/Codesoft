@@ -22,6 +22,17 @@ It performs basic arithmetic operations:
 2. Run the program
 3. Enter two numbers and an operator
 
-## Author
+# 🎯 Number Guessing Game (C++) (Codesoft Task 1)
+
+A simple C++ console-based number guessing game.  
+The program generates a random number and guides the user with “Too High” or “Too Low” feedback until the correct guess is made.
+
+## 🛠️ Technologies
+- C++
+- Standard Libraries
+
+## 👩‍💻 Author
 Nikky Kumari
+
+
 
