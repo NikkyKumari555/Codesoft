@@ -4,16 +4,16 @@
 using namespace std;
 
 struct Task {
-    string name;
-    bool completed;
+    string Name;
+    bool done;
 };
 
 void addTask(vector<Task> &tasks) {
     Task t;
-    cout << "\nEnter task name: ";
+    cout << "\n Enter  the task : ";
     cin.ignore();
-    getline(cin, t.name);
-    t.completed = false;
+    getline(cin, t.Name);
+    t.done = false;
     tasks.push_back(t);
     cout << "Task added successfully!\n";
 }
@@ -27,7 +27,7 @@ void viewTasks(const vector<Task> &tasks) {
     cout << "\n--- TO-DO LIST ---\n";
     for (int i = 0; i < tasks.size(); i++) {
         cout << i + 1 << ". " << tasks[i].name << " [";
-        if (tasks[i].completed)
+        if (tasks[i].done)
             cout << "Completed";
         else
             cout << "Pending";
@@ -46,7 +46,7 @@ void markCompleted(vector<Task> &tasks) {
     if (choice < 1 || choice > tasks.size()) {
         cout << "Invalid task number!\n";
     } else {
-        tasks[choice - 1].completed = true;
+        tasks[choice - 1].done = true;
         cout << "Task marked as completed!\n";
     }
 }
